@@ -1,0 +1,572 @@
+@import "../validation.css";
+/* 
+Import the CSS stylesheet for Form Validations 
+------------------------------------------------*/
+/*---------------------------------*/
+@font-face {
+  font-family: "Proxima Nova Light";
+  src: url("../../fonts/camp/ProximaNova-Light.otf");
+}
+/*@font-face {
+  font-family: "Open Sans Light";
+  src: url("../../fonts/camp/OpenSans-Light.ttf");
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("../../fonts/camp/OpenSans-Regular.ttf");
+}*/
+a.btn-xparent-primary {
+  color: #e53939;
+  border: solid 1px #e53939;
+}
+a.btn-xparent-primary:hover,
+a.btn-xparent-primary:active {
+  color: #fff;
+  background: #e53939;
+}
+.row {
+  padding: 10px;
+}
+/*
+div#coming-soon-label {
+  font-size: .9em;
+  padding-right: 0;
+}
+*/
+img.img-right {
+  float: right;
+}
+img.img-left {
+  float: left;
+}
+/*img#phone-icon {
+  display: block;
+  float: left;
+}
+div#coming-soon-date ul li {
+  display: block;
+  float: left;
+  margin: 5%;
+  width: 22%;
+  font-size: 9px;
+  text-align: center;
+  text-transform: uppercase;
+}
+div#coming-soon-date {
+  padding: 0px;
+  width: 20%;
+}
+div#coming-soon-date span.date {
+  display: block;
+  text-align: center;
+  font-size: 15px;
+  color: #fff;
+  background: #404040;
+  background: -moz-linear-gradient(top, #404040 0%, #262626 49%, #303030 50%, #474747 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #404040), color-stop(49%, #262626), color-stop(50%, #303030), color-stop(100%, #474747));
+  background: -webkit-linear-gradient(top, #404040 0%, #262626 49%, #303030 50%, #474747 100%);
+  background: -o-linear-gradient(top, #404040 0%, #262626 49%, #303030 50%, #474747 100%);
+  background: -ms-linear-gradient(top, #404040 0%, #262626 49%, #303030 50%, #474747 100%);
+  background: linear-gradient(to bottom, #404040 0%, #262626 49%, #303030 50%, #474747 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#404040', endColorstr='#474747', GradientType=0);
+  padding: 6px;
+  border-radius: 2px;
+  width: 33px;
+  height: 33px;
+  margin-bottom: 2px;
+}
+div#coming-soon-date ul {
+  min-height: 58px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  margin-left: 8px;
+  max-width: 136px;
+  position: relative;
+  top: -20px;
+}
+div#phone-call {
+  width: 18%;
+}
+div#head-call-to-action {
+  width: 20%;
+}
+div#head-call-to-action .btn {
+  position: relative;
+  top: -8px;
+  border-radius: 2px;
+  font-weight: bold;
+  width: 100%;
+}
+section#header {
+  height: 62px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.23);
+}
+section#header .container-fluid {
+  height: 100%;
+}
+section#header .row {
+  height: 100%;
+}
+div#camp-logo img {
+  position: relative;
+  top: -8px;
+  max-width: 170px;
+}*/
+section#banner {
+  background: url('../../images/camp/bg-b-1.jpg') no-repeat top center;
+  background-size: cover;
+  color: #fff;
+  padding-top: 100px;
+}
+section#banner h2 {
+  font-family: 'Proxima Nova Light';
+  font-size: 3em;
+}
+section#banner p.desc-1 {
+  font-size: 20px;
+  font-family: 'Open Sans';
+  font-weight: 300;
+}
+hr#blueline {
+  border-top: 2px solid #2d86b3;
+  width: 40px;
+  margin: 3% auto;
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
+section#banner p.desc-2 {
+  font-family: 'Open Sans';
+  font-size: 1em;
+}
+section#banner p.desc-3 {
+  font-family: 'Open Sans';
+  font-size: 1.175em;
+  max-width: 1010px;
+  margin: auto;
+  line-height: 1.7em;
+}
+.centerbutton {
+  width: 80px;
+  height: 80px;
+  margin: auto;
+  border: 1px solid;
+  padding: 22px;
+  border-radius: 50px;
+}
+.centerbutton-small {
+  border: 1px solid;
+  width: 30px;
+  margin: auto;
+  height: 30px;
+  padding: 5px;
+  border-radius: 20px;
+}
+section#form .container {
+  max-width: 972px;
+}
+form.infusion-form label {
+  display: block;
+  font-family: 'Open Sans';
+  font-weight: bold;
+  font-size: 1em;
+  margin-top: 38px;
+}
+form.infusion-form input {
+  width: 100%;
+  display: block;
+  padding: 15px;
+  border: 1px solid #e6e6e6;
+  font-family: 'Open Sans';
+  font-weight: 300;
+  color: #222222;
+}
+form.infusion-form textarea {
+  width: 100%;
+  display: block;
+  padding: 15px;
+  border: 1px solid #e6e6e6;
+  font-family: 'Open Sans';
+  font-weight: 300;
+  color: #222222;
+  max-width: 972px;
+}
+span.red-highlight {
+  color: #f00;
+}
+form.infusion-form select {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  border: solid 1px #e6e6e6;
+  background: #f7f7f7;
+  font-family: 'Open Sans';
+  font-weight: 300;
+}
+form.infusion-form select option {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  border: solid 1px #e6e6e6;
+  background: #FFFFFF;
+  font-family: 'Open Sans';
+  font-weight: 300;
+  color: #989898;
+}
+div.dropcontainer a:hover {
+  color: #fff!important;
+}
+div.dropcontainer a:hover {
+  color: #fff!important;
+}
+.dropcontainer ul li:hover a {
+  color: #fff;
+}
+.dropcontainer ul li a:hover {
+  text-decoration: none;
+}
+.dropcontainer ul li {
+  cursor: pointer;
+}
+form.infusion-form button {
+  padding: 15px 26px;
+  background: #fff;
+  border: 1px solid #e53939;
+  color: #e53939;
+  font-weight: bold;
+}
+section#footer {
+  background: #383838;
+  background: -moz-linear-gradient(top, #383838 0%, #242424 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #383838), color-stop(100%, #242424));
+  background: -webkit-linear-gradient(top, #383838 0%, #242424 100%);
+  background: -o-linear-gradient(top, #383838 0%, #242424 100%);
+  background: -ms-linear-gradient(top, #383838 0%, #242424 100%);
+  background: linear-gradient(to bottom, #383838 0%, #242424 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#383838', endColorstr='#242424', GradientType=0);
+  font-size: .9em;
+  padding: 10px 0px 0px;
+}
+section#footer p {
+  color: #999999;
+}
+.footer-menu ul li {
+  display: block;
+  float: left;
+  margin-right: 20px;
+}
+section#footer .footer-menu ul li a:link,
+section#footer .footer-menu ul li a:visited {
+  color: #999;
+}
+form.infusion-form input.filled,
+form.infusion-form textarea.filled {
+  border: 1px solid #74cc47;
+  background: url("../../images/camp/check-icon.png") no-repeat 99% center !important;
+}
+form.infusion-form a.trigger.filled::after {
+  display: block;
+  content: url("../../images/camp/check-icon.png");
+  float: right;
+  margin-right: 40px ;
+}
+form.infusion-form a.trigger.filled {
+  border: 1px solid #74cc47;
+}
+/*div#first_countdown-camp {
+  position: relative;
+  top: -8px;
+}*/
+.show-mobile {
+  display: none;
+}
+/*#phone-call::before {
+  display: block;
+  float: left;
+  content: url("../../images/camp/phone-icon.png");
+}
+#phone-call:hover::before {
+  display: block;
+  float: left;
+  content: url("../../images/camp/phone-icon-2.png");
+}
+#phone-call a:link {
+  color: #666;
+}
+#phone-call a:hover {
+  color: #73b852;
+  text-decoration: none;
+}*/
+a.btn-xparent-primary:link::before {
+  display: block;
+  float: right;
+  content: url("../../images/camp/right-icon.png");
+}
+a.btn-xparent-primary:hover::before {
+  display: block;
+  float: right;
+  content: url("../../images/camp/right-icon-white.png");
+}
+/*section#header {
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  z-index: 999;
+  -webkit-transition: padding .5s, background .5s ,  height .5s;
+  transition: padding .5s, background .5s,  height .5s;
+}
+section#header.unstick {
+  color: #fff;
+  border-bottom: solid 1px rgba(255, 255, 255, 0.24);
+  padding: 20px 0px;
+  background: transparent;
+  height: 97px;
+}
+body.sales section#header.unstick {
+  color: #666;
+}
+div#camp-logo h1 {
+  text-indent: -999px;
+}
+section#header div#camp-logo h1 {
+  background: url("../../images/camp/logo.png") no-repeat top left;
+  background-size: contain;
+  display: block;
+  margin: 0;
+  padding: 0;
+  height: 48px;
+  top: -5px;
+  position: relative;
+  -webkit-transition: top .5s, background 1s ,  height .5s;
+  transition: top .5s, background 1s,  height .5s;
+}
+section#header.unstick div#camp-logo h1 {
+  background: url("../../images/camp/logo-inverted.png") no-repeat top left;
+  background-size: contain;
+  height: 60px;
+  top: -10px;
+  position: relative;
+}
+body.sales section#header.unstick div#camp-logo h1 {
+  background: url("../../images/camp/logo.png") no-repeat top left;
+  background-size: contain;
+  height: 60px;
+  top: -10px;
+  position: relative;
+}
+body.sales.dark-head section#header.unstick div#camp-logo h1 {
+  background: url("../../images/camp/logo-inverted.png") no-repeat top left;
+  background-size: contain;
+  height: 60px;
+  top: -10px;
+  position: relative;
+}
+section#header.unstick #phone-call a:link {
+  color: #FFFFFF;
+}
+body.sales section#header.unstick #phone-call a:link {
+  color: #666;
+}
+section#header.unstick #phone-call a:hover {
+  color: #73b852;
+}
+body.dark-head section#header.unstick {
+  color: #fff;
+}
+body.dark-head section#header.unstick #phone-call a:link {
+  color: #fff;
+}*/
+.scrollToTop {
+  width: 55px;
+  height: 55px;
+  padding: 10px;
+  text-align: center;
+  background: whiteSmoke;
+  font-weight: bold;
+  color: #444;
+  text-decoration: none;
+  position: fixed;
+  bottom: 0px;
+  right: 10px;
+  display: none;
+  background: url('../../images/camp/arrow_up.png') no-repeat 0px 0px;
+}
+.scrollToTop:hover {
+  text-decoration: none;
+}
+.campFormCustom.formError {
+  position: absolute;
+  top: -10px;
+  right: -70px;
+  max-width: 130px;
+  display: none;
+}
+.infusion-field {
+  position: relative;
+  width: 100%;
+}
+div.timezoneholder {
+  display: none;
+}
+/*@media screen and (max-width: 1200px) and (min-width: 769px) {
+  div#coming-soon-label {
+    top: -8px;
+  }
+  div#first_countdown-camp {
+    top: -3px;
+  }
+  div#phone-call {
+    padding: 0;
+    font-size: .8em;
+  }
+  div#head-call-to-action {
+    padding: 10px;
+    top: -18px;
+  }
+  div#head-call-to-action .btn {
+    top: 1px;
+    position: relative;
+    font-size: .8em;
+  }
+}*/
+/*@media screen and (max-width: 768px) and (min-width: 481px) {
+  div#head-call-to-action {
+    float: left;
+    width: 23%;
+    padding: 0;
+  }
+  div#coming-soon-label {
+    width: 35%;
+    float: left;
+    top: -3px;
+    font-size: .8em;
+  }
+  div#first_countdown-camp {
+    width: 41%;
+    float: left;
+    top: 0px;
+  }
+  div#phone-call {
+    width: 10%;
+    float: left;
+    display: none;
+  }
+  div#head-call-to-action .btn {
+    width: 100%;
+    font-size: 0.8em;
+    padding: 8px 4px;
+  }
+  body.sales section#header.unstick div#camp-logo h1 {
+    background: url("../../images/camp/logo.png") no-repeat top left;
+    background-size: contain;
+    height: 60px;
+    top: 0px;
+    position: relative;
+  }
+  section#header div#camp-logo h1 {
+    background: url("../../images/camp/logo.png") no-repeat top left;
+    background-size: contain;
+    display: block;
+    margin: 0;
+    padding: 0;
+    height: 48px;
+    top: 5px;
+    position: relative;
+  }
+  div#head-call-to-action .btn::before {
+    content: none;
+  }
+}*/
+@media screen and (max-width: 480px) {
+  .hide-mobile {
+    display: none;
+  }
+  .show-mobile {
+    display: block;
+  }
+  /*  section#header {
+    height: 74px;
+  }
+  div#headerinfo {
+    display: none;
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.16);
+  }
+  div#coming-soon-label {
+    width: 100%;
+    text-align: center;
+  }
+  div#phone-call {
+    width: 60%;
+    text-align: center;
+    margin: 21px auto;
+  }
+  div#head-call-to-action {
+    width: 100%;
+    top: 0;
+  }
+  div#head-call-to-action .btn {
+    top: 0;
+    margin: 30px auto;
+    display: block;
+  }
+  div#camp-logo img {
+    margin: 12px 0px 0px;
+  }
+  div#first_countdown-camp {
+    top: 0;
+    width: 100%;
+    min-height: 40px;
+    max-width: 153px;
+    margin: auto;
+  }
+  div#camp-logo {
+    width: 100%;
+  }
+  div#headerinfo {
+    width: 100%;
+  }*/
+  .footer-menu ul li {
+    width: 100%;
+    text-align: center;
+  }
+  .footer-menu ul {
+    margin: 0;
+    padding: 0;
+  }
+  p#copy-right {
+    text-align: center;
+    font-size: .9em;
+  }
+  /*  a#mobile-menu-trigger {
+    display: block;
+    width: 42px;
+    height: 35px;
+    border: solid 1px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    padding: 4px 10px;
+    color: #e53939;
+    border-radius: 4px;
+  }*/
+  /*  section#header.unstick {
+    height: 114px;
+  }
+  section#header div#camp-logo h1 {
+    top: 0px;
+  }
+  body.dark-head section#header.unstick .collapsed #phone-call a:link,
+  section#header.unstick .collapsed #phone-call a:link {
+    color: #666;
+  }
+  body.dark-head section#header.unstick .collapsed #phone-call a:hover,
+  section#header.unstick .collapsed #phone-call a:hover {
+    color: #77BA5B;
+  }
+  div#headerinfo.collapsed {
+    color: #666;
+  }*/
+}

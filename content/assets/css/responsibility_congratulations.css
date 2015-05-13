@@ -1,0 +1,94 @@
+@media screen and (max-width: 1156px) {
+  .congrats-top {
+    height: 1500px;
+  }
+  .video {
+    width: 100%;
+  }
+  .ticket {
+    margin-top: 50px;
+  }
+  .responsive_helper {
+    margin: 0 25%;
+  }
+}
+@media screen and (max-width: 910px) {
+  #phone_number {
+    text-align: center;
+    clear: both;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .logo {
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .navbar-brand {
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .phone {
+    width: 100%;
+    text-align: center;
+  }
+  .navbar-brand img {
+    margin: 0 auto;
+  }
+  #footer_menu {
+    clear: both;
+    width: 100%;
+    background: #252525;
+  }
+  #copyright {
+    width: 100%;
+    text-align: center;
+  }
+  .nowideo {
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: auto 100%;
+  }
+  footer {
+    height: 260px;
+  }
+  #footer_menu a {
+    clear: both;
+    float: left;
+    width: 100%;
+    text-align: center;
+  }
+  footer .menu {
+    margin: 0;
+  }
+  footer a:hover {
+    background: #696969;
+  }
+  .informs h2 {
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .jumbotron h4 {
+    margin-top: 30px;
+  }
+  .jumbotron h2 {
+    font-size: 46px;
+  }
+  .phone {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .ticket {
+    height: 620px;
+  }
+  .responsive_helper {
+    margin: 0;
+  }
+  .jumbotron h5 {
+    margin-top: 30px;
+  }
+}

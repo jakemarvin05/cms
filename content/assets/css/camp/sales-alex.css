@@ -1,0 +1,2354 @@
+/* START stylesheet for select turn to dropdown 
+===============================================================
+*/
+.dropcontainer {
+  position: relative;
+  font-size: 16px;
+  color: #777;
+}
+.trigger {
+  color: #777;
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+  background: #f7f7f7 url("../images/camp/select-arrow-open.png") 98% center no-repeat;
+  display: block;
+  border: 1px solid #e6e6e6;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.trigger:hover {
+  color: #777;
+  background: #f6f6f6 url("../images/camp/select-arrow-open.png") 98% center no-repeat;
+  text-decoration: none;
+}
+.activetrigger {
+  color: #777;
+  padding: 15px;
+  font-size: 14px;
+  width: 100%;
+  background: #ffffff url("../images/camp/select-arrow-close.png") 98% center no-repeat;
+  display: block;
+  border: 1px solid #ccc;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.activetrigger:hover {
+  background: #f5f5f5 url("../images/camp/select-arrow-close.png") 98% center no-repeat;
+  color: #777;
+  text-decoration: none;
+}
+.activetrigger:active {
+  background: #f5f5f5 url("../images/camp/select-arrow-close.png") 98% center no-repeat;
+  color: #777;
+}
+.dropcontainer ul {
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-top: none;
+  background: #fff;
+  list-style-type: none;
+  padding: 0px;
+  margin: 0;
+  width: 100%;
+  z-index: 100;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.dropcontainer ul li {
+  padding: 15px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.dropcontainer ul li:hover {
+  background: #2d86b3;
+  outline: none;
+}
+.dropcontainer ul li:first-child {
+  display: none;
+}
+.dropcontainer ul li:last-child {
+  border-bottom: none;
+}
+.dropdownhidden {
+  display: none;
+}
+.dropdownvisible {
+  height: auto;
+}
+.dropcontainer_demo2 {
+  position: relative;
+  font-size: 16px;
+  color: #777;
+}
+.trigger_demo2 {
+  color: #777;
+  padding: 10px;
+  font-size: 16px;
+  width: 50%;
+  background: #ffffff url("../images/camp/select-arrow-open.png") 98% center no-repeat;
+  display: block;
+  border: 1px solid #ccc;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.trigger_demo2:hover {
+  color: #777;
+  background: #f5f5f5 url("../images/camp/select-arrow-open.png") 98% center no-repeat;
+}
+.activetrigger_demo2 {
+  color: #777;
+  padding: 10px;
+  font-size: 16px;
+  width: 50%;
+  background: #f5f5f5 url("../images/camp/select-arrow-close.png") 98% center no-repeat;
+  display: block;
+  border: 1px solid #ccc;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.activetrigger_demo2:hover {
+  background: #f5f5f5 url("../images/camp/select-arrow-close.png") 98% center no-repeat;
+  color: #777;
+}
+.activetrigger_demo2:active {
+  background: #f5f5f5 url("../images/camp/select-arrow-close.png") 98% center no-repeat;
+  color: #777;
+}
+.dropcontainer_demo2 ul {
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-top: none;
+  background: #fff;
+  list-style-type: none;
+  padding: 10px;
+  margin: 0;
+  width: 50%;
+  z-index: 100;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.dropcontainer_demo2 ul li {
+  padding: 5px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.dropcontainer_demo2 ul li:hover {
+  background: #f5f5f5;
+  outline: none;
+}
+.dropcontainer_demo2 ul li:first-child {
+  display: none;
+}
+.dropcontainer_demo2 ul li:last-child {
+  border-bottom: none;
+}
+.dropdownhidden_demo2 {
+  display: none;
+}
+.dropdownvisible_demo2 {
+  height: auto;
+}
+.dropdownvisible_demo2 {
+  height: 200px;
+  overflow-y: scroll;
+}
+.dropcontainer li a,
+.dropcontainer li a:hover {
+  text-decoration: none!important;
+}
+.dropcontainer li a {
+  color: #a9a9a9;
+  font-family: 'Open Sans';
+  font-weight: 300;
+  font-size: 14px;
+}
+.trigger {
+  font-size: 14px;
+  padding: 15px;
+  text-decoration: none!important;
+  color: #222222!important;
+}
+.activetrigger {
+  text-decoration: none!important;
+  color: #222222!important;
+}
+/* START stylesheet for specific for sales page
+===============================================================
+*/
+@font-face {
+  font-family: "Proxima Nova Light";
+  src: url("../../fonts/camp/ProximaNova-Light.otf");
+}
+/*@font-face {
+  font-family: "Open Sans Light";
+  src: url("../../fonts/camp/OpenSans-Light.ttf");
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("../../fonts/camp/OpenSans-Regular.ttf");
+}*/
+h1,
+h2 {
+  font-family: "Proxima Nova Light";
+}
+h3,
+h4,
+h5 {
+  font-family: 'Open Sans';
+  font-weight: 300;
+  line-height: 2em;
+}
+a:hover {
+  text-decoration: none;
+}
+p {
+  font-family: "Open Sans";
+  line-height: 2em;
+}
+section#banner-sales {
+  background: url("../../images/camp/bannerbg.jpg") no-repeat bottom center;
+  background-size: cover;
+  padding: 4% 0;
+}
+div#videoholder {
+  width: 100%;
+  background: url("../../images/camp/player.png") no-repeat top center;
+  background-size: contain;
+}
+div#left-banner h1 {
+  max-width: 80%;
+}
+a.btn {
+  padding: 12px;
+  border: 1px solid;
+  border-radius: 2px;
+  width: 100%;
+  font-weight: bold;
+}
+div#left-banner .row.button-holder {
+  max-width: 90%;
+}
+div#left-banner p {
+  max-width: 90%;
+}
+a.btn.date {
+  color: #222;
+  border-color: #d9d9d9;
+}
+a.btn.call-to-action {
+  color: #e53939;
+  max-width: 160px;
+}
+section#call-to-action-camp {
+  background: #e53939;
+  padding: 0px 0px;
+  color: #fff;
+  text-transform: uppercase;
+}
+section#call-to-action-camp p {
+  margin-top: 10px;
+}
+/*
+div#head-call-to-action .btn {
+  padding: 6px;
+}
+*/
+img.round,
+.round {
+  border-radius: 60%;
+}
+p.caption {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: .875em;
+}
+img.shadow {
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.22);
+}
+.centerbutton-medium {
+  border: 1px solid;
+  width: 80px;
+  margin: auto;
+  height: 80px;
+  padding: 23px;
+  border-radius: 50px;
+}
+.centerbutton-medium.grey {
+  border-color: #d2d2d2;
+}
+section .row.narrow {
+  max-width: 800px;
+  margin: auto;
+}
+section .row.narrow-2 {
+  max-width: 880px;
+  margin: auto;
+}
+section#section2 {
+  background: url("../../images/camp/bg1.jpg") no-repeat bottom center;
+  background-size: cover;
+  min-height: 600px;
+}
+body {
+  overflow-x: hidden;
+  width: 100%;
+}
+.block-holder {
+  background: #f2f2f2;
+}
+ul.checklist {
+  display: block;
+  padding: 30px;
+  margin: 0;
+  font-size: .875em;
+}
+ul.checklist li {
+  display: block;
+  padding: 20px 0px;
+  border-bottom: 1px solid #FFF;
+}
+ul.checklist li:last-child {
+  border-bottom: none;
+}
+ul.checklist li::before {
+  display: block;
+  content: url("../../images/camp/check-icon.png");
+  float: left;
+  padding: 0px 10px 35px;
+}
+section#section4 {
+  background: #f7f7f7;
+}
+.box {
+  display: inline-flex;
+}
+.box-content {
+  display: block;
+  margin: auto 0px;
+}
+section.alt-blocks .box {
+  min-height: 360px;
+}
+img.img-center {
+  display: block;
+  margin: auto;
+}
+section.alt-blocks {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+section.alt-blocks:nth-child(even) {
+  background-position: bottom left;
+}
+section.alt-blocks:nth-child(odd) {
+  background-position: bottom right;
+}
+section#altblock1 {
+  background-image: url("../../images/camp/bg2.jpg");
+}
+section#altblock2 {
+  background-image: url("../../images/camp/bg3.jpg");
+}
+section#altblock3 {
+  background-image: url("../../images/camp/bg4.jpg");
+}
+section#altblock4 {
+  background-image: url("../../images/camp/bg5.jpg");
+}
+section#altblock6 {
+  background-image: url("../../images/camp/bg7.jpg");
+}
+section#altblock7 {
+  background-image: url("../../images/camp/bg8.jpg");
+}
+sup {
+  color: #999999;
+}
+a.learnmore {
+  color: #222;
+  font-weight: bold;
+  position: relative;
+  display: block;
+  float: left;
+}
+span.round-small {
+  display: block;
+  border: solid 1px #e84f4f;
+  padding: 1px 10px 3px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+.learnmore-holder {
+  max-width: 130px;
+}
+.learnmore-holder .round-small {
+  float: right;
+  top: -3px;
+  position: relative;
+}
+section.alt-blocks {
+  padding: 50px 0px;
+}
+section#section5 {
+  color: #fff;
+  background: url("../../images/camp/bg-dark-1.jpg") no-repeat top center;
+  background-size: cover;
+}
+section#section5 h2 {
+  /* border-bottom: solid 1px #2d86b3; */
+  max-width: 314px;
+  margin: 35px auto;
+}
+section#section6 h6 {
+  line-height: 2em;
+  color: #666666;
+}
+div.blocks {
+  color: #fff;
+  padding: 0;
+  min-height: 680px;
+}
+div#block1,
+div#block1 .phase {
+  background: #414141;
+}
+.block-header {
+  background-size: cover !important;
+  height: 220px;
+}
+#block1 .block-header {
+  background: url("../../images/camp/thumb-a-1.jpg") no-repeat top center;
+}
+#block2 .block-header {
+  background: url("../../images/camp/thumb-a-2.jpg") no-repeat top center;
+}
+#block3 .block-header {
+  background: url("../../images/camp/thumb-a-3.jpg") no-repeat top center;
+}
+.block-header h5 {
+  display: block;
+  padding: 130px 0px 20px;
+  margin: 0;
+}
+.phase {
+  position: relative;
+  margin: 0px auto;
+}
+@font-face {
+  font-family: "Proxima Nova Light";
+  src: url("../fonts/sales/ProximaNova-Light.otf");
+}
+/*@font-face {
+  font-family: "Open Sans Light";
+  src: url("../fonts/sales/OpenSans-Light.ttf");
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/sales/OpenSans-Regular.ttf");
+}*/
+h1,
+h2 {
+  font-family: "Proxima Nova Light";
+}
+h3,
+h4,
+h5 {
+  font-family: 'Open Sans';
+  font-weight: 300;
+}
+a:hover {
+  text-decoration: none;
+}
+p {
+  font-family: "Open Sans";
+  line-height: 2em;
+}
+section#banner-sales {
+  background: url("../../images/camp/bannerbg.jpg") no-repeat bottom center;
+  background-size: cover;
+  padding: 130px 0 4%;
+}
+div#videoholder {
+  width: 100%;
+  background: url("../../images/camp/player.png") no-repeat top center;
+  background-size: contain;
+}
+div#left-banner h1 {
+  max-width: 80%;
+}
+a.btn {
+  padding: 12px;
+  border: 1px solid;
+  border-radius: 2px;
+  width: 100%;
+  font-weight: bold;
+}
+div#left-banner .row.button-holder {
+  max-width: 90%;
+}
+div#left-banner p {
+  max-width: 90%;
+}
+a.btn.date {
+  color: #222;
+  border-color: #d9d9d9;
+}
+a.btn.call-to-action {
+  color: #e53939;
+  max-width: 160px;
+}
+section#call-to-action-camp {
+  background: #e53939;
+  padding: 0px 0px;
+  color: #fff;
+  text-transform: uppercase;
+}
+section#call-to-action-camp p {
+  margin-top: 10px;
+}
+img.round,
+.round {
+  border-radius: 60%;
+}
+p.caption {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: .875em;
+}
+img.shadow {
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.22);
+}
+.centerbutton-medium {
+  border: 1px solid;
+  width: 80px;
+  margin: auto;
+  height: 80px;
+  padding: 23px;
+  border-radius: 50px;
+}
+.centerbutton-medium.grey {
+  border-color: #d2d2d2;
+}
+section .row.narrow {
+  max-width: 800px;
+  margin: auto;
+}
+section .row.narrow-2 {
+  max-width: 880px;
+  margin: auto;
+}
+section#section2 {
+  background: url("../../images/camp/bg1.jpg") no-repeat bottom center;
+  background-size: cover;
+  min-height: 600px;
+}
+body {
+  overflow-x: hidden;
+  width: 100%;
+}
+.block-holder {
+  background: #f2f2f2;
+}
+ul.checklist {
+  display: block;
+  padding: 30px;
+  margin: 0;
+  font-size: .875em;
+  min-height: 360px;
+}
+ul.checklist li {
+  display: block;
+  padding: 20px 0px;
+  border-bottom: 1px solid #FFF;
+}
+ul.checklist li:last-child {
+  border-bottom: none;
+}
+ul.checklist li::before {
+  display: block;
+  content: url("../../images/camp/check-icon.png");
+  float: left;
+  padding: 0px 10px 35px;
+}
+section#section4 {
+  background: #f7f7f7;
+}
+.box {
+  display: inline-flex;
+}
+.box-content {
+  display: block;
+  margin: auto 0px;
+}
+section.alt-blocks .box {
+  min-height: 360px;
+}
+img.img-center {
+  display: block;
+  margin: auto;
+}
+section.alt-blocks {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+section.alt-blocks:nth-child(even) {
+  background-position: bottom left;
+}
+section.alt-blocks:nth-child(odd) {
+  background-position: bottom right;
+}
+section#altblock1 {
+  background-image: url("../../images/camp/bg2.jpg");
+}
+section#altblock2 {
+  background-image: url("../../images/camp/bg3.jpg");
+}
+section#altblock3 {
+  background-image: url("../../images/camp/bg4.jpg");
+}
+section#altblock4 {
+  background-image: url("../../images/camp/bg5.jpg");
+}
+section#altblock5 {
+  background-image: url("../../images/camp/bg6.jpg");
+}
+section#altblock6 {
+  background-image: url("../../images/camp/bg7.jpg");
+}
+section#altblock7 {
+  background-image: url("../../images/camp/bg8.jpg");
+}
+sup {
+  color: #999999;
+}
+a.learnmore {
+  color: #222;
+  font-weight: bold;
+  position: relative;
+  display: block;
+  float: left;
+}
+span.round-small {
+  display: block;
+  border: solid 1px #e84f4f;
+  padding: 1px 10px 3px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+.learnmore-holder {
+  max-width: 130px;
+}
+.learnmore-holder .round-small {
+  float: right;
+  top: -3px;
+  position: relative;
+}
+section.alt-blocks {
+  padding: 50px 0px;
+}
+section#section5 {
+  color: #fff;
+  background: url("../../images/camp/bg-dark-1.jpg") no-repeat top center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+section#section5 h2 {
+  /* border-bottom: solid 1px #2d86b3; */
+  max-width: 314px;
+  margin: 35px auto;
+}
+section#section6 h6 {
+  line-height: 2em;
+  color: #666666;
+}
+div.blocks {
+  color: #fff;
+  padding: 0;
+  margin: 1%;
+  width: 31%;
+}
+div#block1,
+div#block1 .phase {
+  background: #414141;
+}
+div#block2,
+div#block2 .phase {
+  background: #2d86b3;
+}
+div#block3,
+div#block3 .phase {
+  background: #e53939;
+}
+.block-header {
+  background-size: cover !important;
+  height: 220px;
+}
+#block1 .block-header {
+  background: url("../../images/camp/thumb-a-1.jpg") no-repeat top center;
+}
+#block2 .block-header {
+  background: url("../../images/camp/thumb-a-2.jpg") no-repeat top center;
+}
+#block3 .block-header {
+  background: url("../../images/camp/thumb-a-3.jpg") no-repeat top center;
+}
+.block-header h4 {
+  display: block;
+  padding: 110px 30px 20px;
+  margin: 0;
+  font-family: "Open Sans";
+}
+.phase {
+  position: relative;
+  margin: 0px auto;
+  width: 140px;
+  height: 140px;
+  border: solid 4px;
+  padding: 23px;
+}
+.phase-holder {
+  position: absolute;
+  width: 100%;
+  top: -70px;
+}
+.phase .big {
+  font-size: 2.6em;
+}
+.block-content ul li {
+  padding: 20px 0px;
+  border-bottom: solid 1px rgba(221, 221, 221, 0.24);
+  font-weight: bold;
+  display: block;
+  margin-right: 30px;
+  position: relative;
+  padding-left: 20px;
+}
+.block-content ul li:last-child {
+  border-bottom: none;
+}
+.block-content ul li::before {
+  display: block;
+  content: "•";
+  opacity: .5;
+  position: absolute;
+  left: 4px;
+}
+.block-content ul {
+  padding-left: 30px;
+}
+section#section7 {
+  background: url("../../images/camp/bg9.jpg") no-repeat top center;
+  background-size: cover;
+}
+section#section7 h2 {
+  width: 80%;
+  margin: auto;
+}
+ul.table {
+  padding: 0;
+  margin: 0;
+  border-top: solid 1px #e6e6e6;
+}
+ul.table li {
+  display: block;
+  padding: 15px 15px 4px 15px;
+  width: 50%;
+  float: left;
+  border-bottom: 1px solid #e6e6e6;
+  border-left: 1px solid #e6e6e6;
+  color: #666;
+  font-size: .875em;
+}
+ul.table li::before {
+  display: block;
+  float: left;
+  margin-right: 10px;
+  content: url("../../images/camp/x-icon-2.png");
+  position: relative;
+  top: -3px;
+}
+section .row.narrow-3 {
+  max-width: 970px;
+  margin: auto;
+}
+ul.table li:nth-child(even) {
+  border-right: 1px solid #e6e6e6;
+}
+hr.spacer {
+  clear: both;
+  margin: 0;
+  opacity: 0;
+  padding: 10px 0px;
+}
+.tab.current .round {
+  background: #2d86b3;
+  width: 50px;
+  height: 50px;
+  padding: 13px 12px;
+  position: relative;
+  vertical-align: middle;
+  margin-right: 15px;
+  display: inline-block;
+}
+.tab .round {
+  width: 50px;
+  height: 50px;
+  padding: 10px 14px;
+  position: relative;
+  vertical-align: middle;
+  margin-right: 15px;
+  display: inline-block;
+  border: 1px solid #d1d1d1;
+  background: transparent;
+}
+.tab.prev .round {
+  border: 1px solid #73cd47;
+  padding: 11px 20px;
+}
+.tab.prev-old .round {
+  border: 1px solid #73cd47;
+  padding: 15px 17px;
+}
+section#checkoutpopup {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.76);
+  z-index: 999;
+  overflow-y: scroll;
+  height: 100%;
+  display: none;
+}
+.tab {
+  padding: 12px 20px;
+  font-size: 14px;
+  height: 78px;
+  color: #666666;
+  font-weight: bold;
+  vertical-align: middle;
+  background: url("../../images/camp/tabber-bg.png"), #f2f2f2;
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+.tab:last-child {
+  background: #f2f2f2;
+}
+.tab.current:last-child {
+  background: #fff;
+}
+.tab.current {
+  color: #2d86b3;
+  background: url("../../images/camp/tabber-bg-current.png"), #ffffff;
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+.tab.prev {
+  color: #73cd47;
+  background: url("../../images/camp/tabber-bg-prev.png"), #f2f2f2;
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+.tab.prev-old {
+  color: #73cd47;
+  background: url("../../images/camp/tabber-bg.png"), #f2f2f2;
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+.tab.prev .label,
+.tab.prev-old .label {
+  color: #73cd47;
+}
+form.infusion-form input[type="checkbox"] {
+  display: inline;
+  float: left;
+  width: 27px;
+}
+label.checkbox {
+  margin-top: 8px !important;
+}
+button.btn.btn-xparent-primary {
+  background: transparent;
+  border: solid 1px;
+  border-radius: 0px;
+  font-weight: bold;
+  max-width: 180px;
+  color: #e74e4e;
+  text-transform: uppercase;
+  font-family: "Open Sans";
+  padding: 16px 20px;
+  width: 100%;
+}
+button.btn.btn-xparent-primary::after {
+  display: block;
+  float: right;
+  content: url("../../images/camp/right-icon.png");
+}
+button.btn.btn-xparent-primary.pay::after {
+  display: block;
+  float: left;
+  content: url("../../images/camp/coin-icon.png");
+}
+.tab .label {
+  color: #666;
+  font-size: 14px;
+  display: inline-block;
+  padding: 20px 0px;
+}
+div#popup .tab:first-child .round::before {
+  display: block;
+  content: url("../../images/camp/callout-icon-grey.png");
+}
+div#popup .tab.current:first-child .round::before {
+  display: block;
+  content: url("../../images/camp/callout-icon-white.png");
+}
+div#popup .tab:nth-child(2) .round::before {
+  display: block;
+  content: url("../../images/camp/pay-icon-grey.png");
+  left: -2px;
+  position: relative;
+  top: 5px;
+}
+div#popup .tab.current:nth-child(2) .round::before {
+  display: block;
+  content: url("../../images/camp/pay-icon-white.png");
+  left: -1px;
+  position: relative;
+  top: 1px;
+}
+div#popup .tab:last-child .round::before {
+  display: block;
+  content: url("../../images/camp/sign-icon-grey.png");
+}
+div#popup .tab.current:last-child .round::before {
+  display: block;
+  content: url("../../images/camp/sign-icon-white.png");
+}
+div#popup .tab.prev .round::before {
+  display: block;
+  content: url("../../images/camp/check-icon.png");
+}
+div#popup .tab.prev-old .round::before {
+  display: block;
+  content: url("../../images/camp/check-icon.png");
+}
+.checkoutsidebar {
+  background: #f2f2f2;
+}
+.tab-content-checkout h2 {
+  max-width: 640px;
+  margin: 30px auto 10px;
+}
+@media screen and (max-width: 480px) {
+  div.blocks {
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+}
+.dark {
+  color: #fff;
+}
+h2.unl {
+  max-width: 314px;
+  margin: 35px auto;
+  text-decoration: underline;
+  color: #2d86b3;
+}
+a.btn-xparent-primary-rev:link {
+  background: #e53939;
+  color: #fff;
+}
+a.btn-xparent-primary:link::before {
+  display: block;
+  float: right;
+  content: url("../../images/camp/right-icon.png");
+}
+a.btn-xparent-primary:hover::before {
+  display: block;
+  float: right;
+  content: url("../../images/camp/right-icon-white.png");
+}
+a.btn-xparent-primary-rev:link::before,
+a.btn.call-to-action-white:link::before {
+  display: block;
+  float: right;
+  content: url("../../images/camp/right-icon-white.png");
+}
+a.btn-xparent-primary-rev:hover::before,
+a.btn.call-to-action-white:hover::before {
+  display: block;
+  float: right;
+  content: url("../../images/camp/right-icon.png");
+}
+a.btn-xparent-primary-rev:hover {
+  background: transparent;
+  color: #e53939;
+}
+div.tab-content-checkout .row {
+  width: 92%;
+  margin: auto;
+}
+section#checkoutpopup label {
+  margin-top: 10px;
+}
+a.btn.call-to-action-white:link {
+  background: #e53939;
+  color: #fff;
+}
+a.btn.call-to-action-white:hover {
+  background: #fff;
+  color: #e53939;
+}
+section#section9 {
+  background: url("../../images/camp/bg-dark-2.jpg") no-repeat top center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+section#section9 .btn.call-to-action-white {
+  border: none;
+}
+span.boxed {
+  border: solid 1px;
+  padding: 2px;
+  border-radius: 2px;
+}
+section#section9 h2 {
+  max-width: 670px;
+}
+.grey-bg {
+  background: #414141;
+}
+.text-grey-white {
+  color: #cccccc;
+}
+.no-border-v {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+.no-border-h {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+.no-border {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.border-right {
+  border-right: 1px solid #676767;
+}
+.col2 {
+  padding: 20px 60px;
+}
+.white-bg {
+  background: #fff;
+}
+.row.guarantee.no-border {
+  background: #f2f2f2;
+}
+.row.guarantee.no-border p {
+  max-width: 640px;
+}
+section .row.narrow-4 {
+  max-width: 1040px;
+  margin: auto;
+}
+section#section10 .col-left li {
+  font-size: 1em;
+  padding: 8px 0px;
+  display: block;
+  position: relative;
+}
+section#section10 .col-left li::before {
+  display: block;
+  content: "•";
+  position: absolute;
+  left: -18px;
+  font-size: 20px;
+  color: #868686;
+  top: 4px;
+}
+img.img-responsive.img-stamp {
+  position: absolute;
+  top: -30px;
+  right: -13px;
+}
+div.img-holder {
+  position: relative;
+}
+.book-add.row img {
+  min-width: 280px;
+  position: relative;
+  left: -51px;
+}
+.em875 {
+  font-size: .875em;
+}
+.book-add.row {
+  padding: 0px 30px;
+  text-align: left;
+  border-left: 1px solid #e6e6e6;
+}
+.book-add.row h5 {
+  font-size: 1.2em;
+  font-weight: bold;
+  font-family: "Open sans";
+}
+section#section10 h4 {
+  font-family: "Open Sans";
+}
+div#price {
+  background: #f2f2f2;
+  margin: auto !important;
+}
+span.big {
+  font-size: 3em;
+  font-family: "Proxima Nova Light";
+}
+span.big sup {
+  font-size: .4em;
+  top: -19px;
+}
+a.btn.cart-button:link {
+  color: #e53939;
+  background: transparent;
+  max-width: 170px;
+}
+a.btn.cart-button:link::before {
+  display: block;
+  float: left;
+  content: url("../../images/camp/cart-icon.png");
+}
+a.btn.cart-button:hover {
+  background: #fff;
+}
+div#price .left-col {
+  border-right: solid 1px #fff;
+}
+div#price hr.spacer {
+  height: 0px;
+  padding: 0;
+}
+.text-dark-grey-white {
+  color: #666666;
+}
+p#discount a {
+  color: #C7C7C7;
+}
+section#section11 {
+  background: url("../../images/camp/bg-red.jpg") no-repeat bottom center;
+  background-size: cover;
+}
+section#section11 .centerbutton-medium {
+  color: #b32d2d;
+  padding: 19px 23px;
+}
+a.btn.gray-button {
+  background: #414141;
+  color: #fff;
+  max-width: 170px;
+  border: none;
+}
+a.btn.gray-button::before {
+  display: block;
+  float: right;
+  content: url("../../images/camp/right-arrow-icon.png");
+  top: 2px;
+  position: relative;
+}
+a.btn.gray-button:hover {
+  background: #000;
+}
+.rating {
+  width: 70px;
+  height: 20px;
+  background: url("../../images/camp/rating-stars.png") no-repeat;
+}
+.rating-5 {
+  background-position: 0px top;
+}
+.rating-4 {
+  background-position: -14px top;
+}
+.rating-3 {
+  background-position: -28px top;
+}
+.rating-2 {
+  background-position: -42px top;
+}
+.rating-1 {
+  background-position: -56px top;
+}
+.rating-0 {
+  background-position: -70px top;
+}
+.row.testi-row {
+  border-bottom: 1px solid #e6e6e6;
+  padding-top: 35px;
+}
+.row.testi-row:last-child {
+  border-bottom: none;
+}
+.testi-col p {
+  padding-right: 30px;
+}
+section#section12 {
+  background: url("../../images/camp/bg10.jpg") no-repeat top center;
+  background-size: cover;
+}
+.show-mobile {
+  display: none;
+}
+/*
+#phone-call::before {
+  display: block;
+  float: left;
+  content: url("../../images/camp/phone-icon.png");
+}
+#phone-call:hover::before {
+  display: block;
+  float: left;
+  content: url("../../images/camp/phone-icon-2.png");
+}
+#phone-call a:link {
+  color: #666;
+}
+#phone-call a:hover {
+  color: #73b852;
+}
+*/
+div#Box_jbeeb_16,
+div#Box_jbeeb_12,
+div#Box_jbeeb_8 {
+  display: none;
+}
+.badges .left {
+  border-right: 1px solid #e5e5e5;
+}
+.badges img.box-content {
+  height: auto;
+  width: 70%;
+}
+.badges .row .row {
+  margin: 0;
+  border-bottom: 1px solid #ddd;
+  height: 90px;
+  padding: 23px 20px;
+}
+.badges .right {
+  padding: 0;
+}
+.badges .row.box img {
+  width: 100%;
+  height: auto;
+}
+/*#camp-logo {
+  width: inherit;
+  height: auto;
+  float: left;
+  position: relative;
+}*/
+.badges .row .row:last-child {
+  border-bottom: none;
+}
+.checkoutsidebar .row:first-child {
+  background: url("../../images/camp/money-back-icon-grey.png");
+  background-position: 12px 27px;
+  background-repeat: no-repeat;
+}
+.checkoutsidebar .row:nth-child(2) {
+  background: url("../../images/camp/safe-icon-grey.png");
+  background-position: 12px 27px;
+  background-repeat: no-repeat;
+}
+.checkoutsidebar .row:nth-child(3) {
+  background: url("../../images/camp/lock-icon-grey.png");
+  background-position: 12px 27px;
+  background-repeat: no-repeat;
+}
+.checkoutsidebar .row:nth-child(4) {
+  background: url("../../images/camp/help-icon-grey.png");
+  background-position: 12px 27px;
+  background-repeat: no-repeat;
+}
+.checkoutsidebar .row {
+  border-top: solid 1px #fff;
+  padding-left: 52px;
+  padding-right: 18px;
+  font-size: 13px;
+}
+.checkoutsidebar .row h4 {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #999999;
+  font-size: 14px;
+  font-family: "Open Sans";
+}
+.form-holder {
+  border-top: 1px solid #F2F2F2;
+  margin-right: 2%;
+  width: 56.33333%;
+}
+div.tab-content-checkout .row .row {
+  width: 100%;
+}
+.checkoutsidebar .row p {
+  line-height: 1.8em;
+}
+.checkoutsidebar .row h4 {
+  line-height: 1.8em;
+}
+.badges {
+  border: 1px solid #e6e6e6;
+  margin-top: 20px;
+}
+.badges .box {
+  height: 180px;
+}
+.badges .row.box {
+  height: 87px;
+}
+.badges .box-content {
+  margin: auto;
+}
+.row.checkoutfooter {
+  color: #999999;
+  margin: 20px auto 0px;
+  border-top: 1px solid #E6E6E6;
+  max-width: 740px;
+  font-size: 12px;
+}
+.row.checkoutfooter a {
+  color: #999;
+}
+div.tab-content-checkout .form-holder {
+  display: none;
+}
+div.tab-content-checkout .form-holder.current {
+  display: block;
+}
+div.tab-content-checkout .round.green-bg {
+  width: 40px;
+  height: 40px;
+  background: #75cc47;
+  display: inline-block;
+  top: -5px;
+  position: relative;
+  float: left;
+  left: 0;
+}
+div.tab-content-checkout .round.green-bg::before {
+  display: block;
+  content: url("../../images/camp/check-icon-white.png");
+  padding: 2px 13px;
+}
+section#checkoutpopup #popup {
+  margin: 5% auto;
+  background: #fff;
+  padding: 0;
+  position: relative;
+}
+form.infusion-form .row {
+  position: relative;
+}
+#checkoutpopup span.close {
+  background: #191919;
+  width: 40px;
+  height: 40px;
+  display: block;
+  position: absolute;
+  top: -20px;
+  border-radius: 60%;
+  right: -20px;
+  z-index: 9999;
+  padding: 12px 14px;
+  opacity: .9;
+}
+#checkoutpopup span.close::before {
+  display: block;
+  content: url("../../images/camp/x-icon-white.png");
+}
+@media screen and (max-width: 480px) {
+  div#left-banner {
+    text-align: center;
+  }
+  div#left-banner h1 {
+    margin: auto;
+  }
+  div#left-banner p {
+    margin: auto;
+  }
+  .row.button-holder {
+    margin: auto;
+  }
+  .hide-mobile {
+    display: none;
+  }
+  .show-mobile {
+    display: block;
+  }
+  div#videoholder {
+    margin: 20px 0px;
+  }
+  a.btn {
+    margin: 10px 0px;
+  }
+  .text-center-mobile {
+    text-align: center;
+  }
+  a.btn.call-to-action-white:link {
+    max-width: 170px;
+    margin: auto;
+    display: block;
+  }
+  section#section1 img {
+    float: none;
+    margin: auto;
+  }
+  section#section1 p.caption {
+    max-width: 200px;
+    margin: 0px auto 30px;
+  }
+  section.alt-blocks .box-content {
+    text-align: center;
+  }
+  .learnmore-holder {
+    margin: 30px auto;
+  }
+  section#section6 img {
+    width: 100%;
+  }
+  div.blocks {
+    margin-bottom: 100px;
+  }
+  div.blocks:last-child {
+    margin-bottom: 0px;
+  }
+  ul.table li {
+    width: 100%;
+    border-right: 1px solid #e6e6e6;
+  }
+  ul.table li:last-child {
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 2px solid #e6e6e6;
+  }
+  img.img-center-mobile {
+    display: block;
+    margin: auto;
+  }
+  img.img-fluid-mobile {
+    width: 100%;
+  }
+  img.img-responsive.img-stamp {
+    left: 29%;
+    top: -70px;
+  }
+  .show-mobile.img-holder {
+    margin-top: 70px;
+  }
+  .book-add.row img {
+    min-width: 380px;
+    position: relative;
+    left: -51px;
+  }
+  .testi-col {
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    border-bottom: solid 2px #e6e6e6;
+  }
+  .row.testi-row {
+    border: none;
+  }
+  /*
+  div#headerinfo {
+    display: none;
+  }
+  section#header {
+    height: 85px;
+  }
+*/
+  /*  a#mobile-menu-trigger {
+    display: block;
+    width: 42px;
+    height: 35px;
+    border: solid 1px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    padding: 4px 10px;
+    color: #e53939;
+    border-radius: 4px;
+  }*/
+}
+.row.sansegogroup div.col {
+  min-height: 255px;
+}
+div#otc-pr {
+  margin-bottom: 50px;
+}
+/* START stylesheet for Validation 
+===============================================================
+*/
+/* Z-INDEX */
+.formError {
+  z-index: 990;
+}
+.formError .formErrorContent {
+  z-index: 991;
+}
+.formError .formErrorArrow {
+  z-index: 996;
+}
+.ui-dialog .formError {
+  z-index: 5000;
+}
+.ui-dialog .formError .formErrorContent {
+  z-index: 5001;
+}
+.ui-dialog .formError .formErrorArrow {
+  z-index: 5006;
+}
+.inputContainer {
+  position: relative;
+  float: left;
+}
+.formError {
+  position: absolute;
+  top: 300px;
+  /* left: 300px; */
+  display: block;
+  cursor: pointer;
+  text-align: left;
+}
+.formError.inline {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: inline-block;
+}
+.ajaxSubmit {
+  padding: 20px;
+  background: #55ea55;
+  border: 1px solid #999;
+  display: none;
+}
+.formError .formErrorContent {
+  width: 100%;
+  background: #ee0101;
+  position: relative;
+  color: #fff;
+  min-width: 130px;
+  font-size: 11px;
+  border: 2px solid #ddd;
+  box-shadow: 0 0 6px #000;
+  -moz-box-shadow: 0 0 6px #000;
+  -webkit-box-shadow: 0 0 6px #000;
+  -o-box-shadow: 0 0 6px #000;
+  padding: 4px 10px 4px 10px;
+  border-radius: 6px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+.formError.inline .formErrorContent {
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  -o-box-shadow: none;
+  border: none;
+  border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  -o-border-radius: 0;
+}
+.greenPopup .formErrorContent {
+  background: #33be40;
+}
+.blackPopup .formErrorContent {
+  background: #393939;
+  color: #FFF;
+}
+.formError .formErrorArrow {
+  width: 15px;
+  margin: -2px 0 0 13px;
+  position: relative;
+}
+body[dir='rtl'] .formError .formErrorArrow,
+body.rtl .formError .formErrorArrow {
+  margin: -2px 13px 0 0;
+}
+.formError .formErrorArrowBottom {
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  -o-box-shadow: none;
+  margin: 0px 0 0 12px;
+  top: 2px;
+}
+.formError .formErrorArrow div {
+  border-left: 2px solid #ddd;
+  border-right: 2px solid #ddd;
+  box-shadow: 0 2px 3px #444;
+  -moz-box-shadow: 0 2px 3px #444;
+  -webkit-box-shadow: 0 2px 3px #444;
+  -o-box-shadow: 0 2px 3px #444;
+  font-size: 0px;
+  height: 1px;
+  background: #ee0101;
+  margin: 0 auto;
+  line-height: 0;
+  font-size: 0;
+  display: block;
+}
+.formError .formErrorArrowBottom div {
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  -o-box-shadow: none;
+}
+.greenPopup .formErrorArrow div {
+  background: #33be40;
+}
+.blackPopup .formErrorArrow div {
+  background: #393939;
+  color: #FFF;
+}
+.formError .formErrorArrow .line10 {
+  width: 13px;
+  border: none;
+}
+.formError .formErrorArrow .line9 {
+  width: 11px;
+  border: none;
+}
+.formError .formErrorArrow .line8 {
+  width: 11px;
+}
+.formError .formErrorArrow .line7 {
+  width: 9px;
+}
+.formError .formErrorArrow .line6 {
+  width: 7px;
+}
+.formError .formErrorArrow .line5 {
+  width: 5px;
+}
+.formError .formErrorArrow .line4 {
+  width: 3px;
+}
+.formError .formErrorArrow .line3 {
+  width: 1px;
+  border-left: 2px solid #ddd;
+  border-right: 2px solid #ddd;
+  border-bottom: 0 solid #ddd;
+}
+.formError .formErrorArrow .line2 {
+  width: 3px;
+  border: none;
+  background: #ddd;
+}
+.formError .formErrorArrow .line1 {
+  width: 1px;
+  border: none;
+  background: #ddd;
+}
+/* START stylesheet for Camp pages
+===============================================================
+*/
+@font-face {
+  font-family: "Proxima Nova Light";
+  src: url("../../fonts/camp/ProximaNova-Light.otf");
+}
+/*@font-face {
+  font-family: "Open Sans Light";
+  src: url("../../fonts/camp/OpenSans-Light.ttf");
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("../../fonts/camp/OpenSans-Regular.ttf");
+}*/
+a.btn-xparent-primary {
+  color: #e53939;
+  border: solid 1px #e53939;
+}
+a.btn-xparent-primary:hover,
+a.btn-xparent-primary:active {
+  color: #fff;
+  background: #e53939;
+}
+.row {
+  padding: 10px;
+}
+/*
+div#coming-soon-label {
+  font-size: .9em;
+  padding-right: 0;
+}
+*/
+img.img-right {
+  float: right;
+}
+img.img-left {
+  float: left;
+}
+/*img#phone-icon {
+  display: block;
+  float: left;
+}
+div#coming-soon-date ul li {
+  display: block;
+  float: left;
+  margin: 5%;
+  width: 22%;
+  font-size: 9px;
+  text-align: center;
+  text-transform: uppercase;
+}
+div#coming-soon-date {
+  padding: 0px;
+  width: 20%;
+}
+div#coming-soon-date span.date {
+  display: block;
+  text-align: center;
+  font-size: 15px;
+  color: #fff;
+  background: #404040;
+  background: -moz-linear-gradient(top, #404040 0%, #262626 49%, #303030 50%, #474747 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #404040), color-stop(49%, #262626), color-stop(50%, #303030), color-stop(100%, #474747));
+  background: -webkit-linear-gradient(top, #404040 0%, #262626 49%, #303030 50%, #474747 100%);
+  background: -o-linear-gradient(top, #404040 0%, #262626 49%, #303030 50%, #474747 100%);
+  background: -ms-linear-gradient(top, #404040 0%, #262626 49%, #303030 50%, #474747 100%);
+  background: linear-gradient(to bottom, #404040 0%, #262626 49%, #303030 50%, #474747 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#404040', endColorstr='#474747', GradientType=0);
+  padding: 6px;
+  border-radius: 2px;
+  width: 33px;
+  height: 33px;
+  margin-bottom: 2px;
+}
+div#coming-soon-date ul {
+  min-height: 58px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  margin-left: 8px;
+  max-width: 136px;
+  position: relative;
+  top: -20px;
+}
+div#phone-call {
+  width: 18%;
+}
+div#head-call-to-action {
+  width: 20%;
+}
+div#head-call-to-action .btn {
+  position: relative;
+  top: -8px;
+  border-radius: 2px;
+  font-weight: bold;
+  width: 100%;
+}
+section#header {
+  height: 62px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.23);
+}
+section#header .container-fluid {
+  height: 100%;
+}
+section#header .row {
+  height: 100%;
+}
+div#camp-logo img {
+  position: relative;
+  top: -8px;
+  max-width: 170px;
+}*/
+section#banner {
+  background: url('../../images/camp/bg-b-1.jpg') no-repeat top center;
+  background-size: cover;
+  color: #fff;
+  padding-top: 100px;
+}
+section#banner h2 {
+  font-family: 'Proxima Nova Light';
+  font-size: 3em;
+}
+section#banner p.desc-1 {
+  font-size: 20px;
+  font-family: 'Open Sans';
+  font-weight: 300;
+}
+hr#blueline {
+  border-top: 2px solid #2d86b3;
+  width: 40px;
+  margin: 3% auto;
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
+section#banner p.desc-2 {
+  font-family: 'Open Sans';
+  font-size: 1em;
+}
+section#banner p.desc-3 {
+  font-family: 'Open Sans';
+  font-size: 1.175em;
+  max-width: 1010px;
+  margin: auto;
+  line-height: 1.7em;
+}
+.centerbutton {
+  width: 80px;
+  height: 80px;
+  margin: auto;
+  border: 1px solid;
+  padding: 22px;
+  border-radius: 50px;
+}
+.centerbutton-small {
+  border: 1px solid;
+  width: 30px;
+  margin: auto;
+  height: 30px;
+  padding: 5px;
+  border-radius: 20px;
+}
+section#form .container {
+  max-width: 972px;
+}
+form.infusion-form label {
+  display: block;
+  font-family: 'Open Sans';
+  font-weight: bold;
+  font-size: 1em;
+  margin-top: 38px;
+}
+form.infusion-form input {
+  width: 100%;
+  display: block;
+  padding: 15px;
+  border: 1px solid #e6e6e6;
+  font-family: 'Open Sans';
+  font-weight: 300;
+  color: #222222;
+}
+form.infusion-form textarea {
+  width: 100%;
+  display: block;
+  padding: 15px;
+  border: 1px solid #e6e6e6;
+  font-family: 'Open Sans';
+  font-weight: 300;
+  color: #222222;
+  max-width: 972px;
+}
+span.red-highlight {
+  color: #f00;
+}
+form.infusion-form select {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  border: solid 1px #e6e6e6;
+  background: #f7f7f7;
+  font-family: 'Open Sans';
+  font-weight: 300;
+}
+form.infusion-form select option {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  border: solid 1px #e6e6e6;
+  background: #FFFFFF;
+  font-family: 'Open Sans';
+  font-weight: 300;
+  color: #989898;
+}
+div.dropcontainer a:hover {
+  color: #fff!important;
+}
+div.dropcontainer a:hover {
+  color: #fff!important;
+}
+.dropcontainer ul li:hover a {
+  color: #fff;
+}
+.dropcontainer ul li a:hover {
+  text-decoration: none;
+}
+.dropcontainer ul li {
+  cursor: pointer;
+}
+form.infusion-form button {
+  padding: 15px 26px;
+  background: #fff;
+  border: 1px solid #e53939;
+  color: #e53939;
+  font-weight: bold;
+}
+section#footer {
+  background: #383838;
+  background: -moz-linear-gradient(top, #383838 0%, #242424 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #383838), color-stop(100%, #242424));
+  background: -webkit-linear-gradient(top, #383838 0%, #242424 100%);
+  background: -o-linear-gradient(top, #383838 0%, #242424 100%);
+  background: -ms-linear-gradient(top, #383838 0%, #242424 100%);
+  background: linear-gradient(to bottom, #383838 0%, #242424 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#383838', endColorstr='#242424', GradientType=0);
+  font-size: .9em;
+  padding: 10px 0px 0px;
+}
+section#footer p {
+  color: #999999;
+}
+.footer-menu ul li {
+  display: block;
+  float: left;
+  margin-right: 20px;
+}
+section#footer .footer-menu ul li a:link,
+section#footer .footer-menu ul li a:visited {
+  color: #999;
+}
+form.infusion-form input.filled,
+form.infusion-form textarea.filled {
+  border: 1px solid #74cc47;
+  background: url("../../images/camp/check-icon.png") no-repeat 99% center !important;
+}
+form.infusion-form a.trigger.filled::after {
+  display: block;
+  content: url("../../images/camp/check-icon.png");
+  float: right;
+  margin-right: 40px ;
+}
+form.infusion-form a.trigger.filled {
+  border: 1px solid #74cc47;
+}
+/*
+div#first_countdown-camp {
+  position: relative;
+  top: -8px;
+}
+*/
+.show-mobile {
+  display: none;
+}
+/*#phone-call::before {
+  display: block;
+  float: left;
+  content: url("../../images/camp/phone-icon.png");
+}
+#phone-call:hover::before {
+  display: block;
+  float: left;
+  content: url("../../images/camp/phone-icon-2.png");
+}
+#phone-call a:link {
+  color: #666;
+}
+#phone-call a:hover {
+  color: #73b852;
+  text-decoration: none;
+}*/
+a.btn-xparent-primary:link::before {
+  display: block;
+  float: right;
+  content: url("../../images/camp/right-icon.png");
+}
+a.btn-xparent-primary:hover::before {
+  display: block;
+  float: right;
+  content: url("../../images/camp/right-icon-white.png");
+}
+/*section#header {
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  z-index: 999;
+  -webkit-transition: padding .5s, background .5s ,  height .5s;
+  transition: padding .5s, background .5s,  height .5s;
+}
+section#header.unstick {
+  color: #fff;
+  border-bottom: solid 1px rgba(255, 255, 255, 0.24);
+  padding: 20px 0px;
+  background: transparent;
+  height: 97px;
+}
+body.sales section#header.unstick {
+  color: #666;
+}
+div#camp-logo h1 {
+  text-indent: -999px;
+}
+section#header div#camp-logo h1 {
+  background: url("../../images/camp/logo.png") no-repeat top left;
+  background-size: contain;
+  display: block;
+  margin: 0;
+  padding: 0;
+  height: 48px;
+  top: -5px;
+  position: relative;
+  -webkit-transition: top .5s, background 1s ,  height .5s;
+  transition: top .5s, background 1s,  height .5s;
+}
+section#header.unstick div#camp-logo h1 {
+  background: url("../../images/camp/logo-inverted.png") no-repeat top left;
+  background-size: contain;
+  height: 60px;
+  top: -10px;
+  position: relative;
+}
+body.sales section#header.unstick div#camp-logo h1 {
+  background: url("../../images/camp/logo.png") no-repeat top left;
+  background-size: contain;
+  height: 60px;
+  top: -10px;
+  position: relative;
+}
+body.sales.dark-head section#header.unstick div#camp-logo h1 {
+  background: url("../../images/camp/logo-inverted.png") no-repeat top left;
+  background-size: contain;
+  height: 60px;
+  top: -10px;
+  position: relative;
+}
+section#header.unstick #phone-call a:link {
+  color: #FFFFFF;
+}
+body.sales section#header.unstick #phone-call a:link {
+  color: #666;
+}
+section#header.unstick #phone-call a:hover {
+  color: #73b852;
+}
+body.dark-head section#header.unstick {
+  color: #fff;
+}
+body.dark-head section#header.unstick #phone-call a:link {
+  color: #fff;
+}*/
+.scrollToTop {
+  width: 55px;
+  height: 55px;
+  padding: 10px;
+  text-align: center;
+  background: whiteSmoke;
+  font-weight: bold;
+  color: #444;
+  text-decoration: none;
+  position: fixed;
+  bottom: 0px;
+  right: 10px;
+  display: none;
+  background: url('../../images/camp/arrow_up.png') no-repeat 0px 0px;
+}
+.scrollToTop:hover {
+  text-decoration: none;
+}
+.campFormCustom.formError {
+  position: absolute;
+  top: -10px;
+  right: -70px;
+  max-width: 130px;
+  display: none;
+}
+.infusion-field {
+  position: relative;
+  width: 100%;
+}
+div.timezoneholder {
+  display: none;
+}
+/*@media screen and (max-width: 1200px) and (min-width: 769px) {
+  div#coming-soon-label {
+    top: -8px;
+  }
+  div#first_countdown-camp {
+    top: -3px;
+  }
+  div#phone-call {
+    padding: 0;
+    font-size: .8em;
+  }
+  div#head-call-to-action {
+    padding: 10px;
+    top: -18px;
+  }
+  div#head-call-to-action .btn {
+    top: 1px;
+    position: relative;
+    font-size: .8em;
+  }
+}*/
+/*@media screen and (max-width: 768px) and (min-width: 481px) {
+  div#head-call-to-action {
+    float: left;
+    width: 23%;
+    padding: 0;
+  }
+  div#coming-soon-label {
+    width: 35%;
+    float: left;
+    top: -3px;
+    font-size: .8em;
+  }
+  div#first_countdown-camp {
+    width: 41%;
+    float: left;
+    top: 0px;
+  }
+  div#phone-call {
+    width: 10%;
+    float: left;
+    display: none;
+  }
+  div#head-call-to-action .btn {
+    width: 100%;
+    font-size: 0.8em;
+    padding: 8px 4px;
+  }
+  body.sales section#header.unstick div#camp-logo h1 {
+    background: url("../../images/camp/logo.png") no-repeat top left;
+    background-size: contain;
+    height: 60px;
+    top: 0px;
+    position: relative;
+  }
+  section#header div#camp-logo h1 {
+    background: url("../../images/camp/logo.png") no-repeat top left;
+    background-size: contain;
+    display: block;
+    margin: 0;
+    padding: 0;
+    height: 48px;
+    top: 5px;
+    position: relative;
+  }
+  div#head-call-to-action .btn::before {
+    content: none;
+  }
+}*/
+@media screen and (max-width: 480px) {
+  .hide-mobile {
+    display: none;
+  }
+  .show-mobile {
+    display: block;
+  }
+  /*  section#header {
+    height: 74px;
+  }
+  div#headerinfo {
+    display: none;
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.16);
+  }
+  div#coming-soon-label {
+    width: 100%;
+    text-align: center;
+  }
+  div#phone-call {
+    width: 60%;
+    text-align: center;
+    margin: 21px auto;
+  }
+  div#head-call-to-action {
+    width: 100%;
+    top: 0;
+  }
+  div#head-call-to-action .btn {
+    top: 0;
+    margin: 30px auto;
+    display: block;
+  }
+  div#camp-logo img {
+    margin: 12px 0px 0px;
+  }
+  div#first_countdown-camp {
+    top: 0;
+    width: 100%;
+    min-height: 40px;
+    max-width: 153px;
+    margin: auto;
+  }
+  div#camp-logo {
+    width: 100%;
+  }
+  div#headerinfo {
+    width: 100%;
+  }*/
+  .footer-menu ul li {
+    width: 100%;
+    text-align: center;
+  }
+  .footer-menu ul {
+    margin: 0;
+    padding: 0;
+  }
+  p#copy-right {
+    text-align: center;
+    font-size: .9em;
+  }
+  /*  a#mobile-menu-trigger {
+    display: block;
+    width: 42px;
+    height: 35px;
+    border: solid 1px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    padding: 4px 10px;
+    color: #e53939;
+    border-radius: 4px;
+  }*/
+  /*  section#header.unstick {
+    height: 114px;
+  }
+  section#header div#camp-logo h1 {
+    top: 0px;
+  }
+  body.dark-head section#header.unstick .collapsed #phone-call a:link,
+  section#header.unstick .collapsed #phone-call a:link {
+    color: #666;
+  }
+  body.dark-head section#header.unstick .collapsed #phone-call a:hover,
+  section#header.unstick .collapsed #phone-call a:hover {
+    color: #77BA5B;
+  }
+  div#headerinfo.collapsed {
+    color: #666;
+  }*/
+}
+/* START css stylesheet specific for Alex Sale page
+=========================================================
+*/
+h3#pr-2 {
+  padding: 0px;
+  margin: 0px;
+  line-height: 1.5em;
+  font-weight: bold;
+}
+p#chris {
+  white-space: nowrap;
+}
+h2.unl {
+  max-width: 592px;
+  width: 500px;
+}
+section#section5 h2 {
+  /* border-bottom: solid 1px #2d86b3; */
+  max-width: 500px;
+  margin: 35px auto;
+}
+.learnmore-holder {
+  max-width: 170px;
+}
+section#altblock1 {
+  background-image: url("../../images/camp/sansego1-bg.png");
+  background-size: cover;
+}
+section#altblock2 {
+  background-image: url("../../images/camp/sansego2-bg.png");
+  background-size: cover;
+}
+section#altblock3 {
+  background-image: url("../../images/camp/sansego3-bg.png");
+  background-size: cover;
+}
+section#altblock4 {
+  background-image: url("../../images/camp/sansego4-bg.png");
+  background-size: cover;
+}
+section#altblock5 {
+  background-image: url("../../images/camp/sansego5-bg.png");
+  background-size: cover;
+}
+section#altblock6 {
+  background-image: url("../../images/camp/sansego6-bg.png");
+  background-size: cover;
+}
+section#altblock7 {
+  background-image: url("../../images/camp/sansego7-bg.png");
+  background-size: cover;
+}
+section#altblock8 {
+  background-image: url("../../images/camp/sansego8-bg.png");
+  background-size: cover;
+}
+section#section2 {
+  background: url("../../images/camp/craig-bg.png") no-repeat bottom center;
+  background-size: cover;
+  min-height: 900px;
+}
+section#section5 {
+  color: #fff;
+  background: url("../../images/camp/trc-bg.png") no-repeat top center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+h4#form-head {
+  text-align: center;
+  font-weight: 600;
+}
+p.form-foot {
+  text-align: center;
+  font-size: 11px;
+}
+section#section7b {
+  color: #fff;
+  background: url("../../images/camp/hawaii-bg.png") no-repeat top center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+section#section51 h2 {
+  /* border-bottom: solid 1px #2d86b3; */
+  max-width: 500px;
+  margin: 35px auto;
+}
+p#hawaii-sec {
+  border-bottom: solid -1px;
+}
+section#altblock9 {
+  background-image: url("../../images/camp/hawaii1-bg.png");
+}
+section#altblock10 {
+  background-image: url("../../images/camp/hawaii2-bg.png");
+}
+section#altblock11 {
+  background-image: url("../../images/camp/hawaii3-bg.png");
+}
+section#altblock12 {
+  background-image: url("../../images/camp/hawaii4-bg.png");
+}
+section#section12 h1 {
+  font-size: 2.6em;
+}

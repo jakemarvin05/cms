@@ -1,0 +1,296 @@
+/* Main */
+body {
+  font-family: 'Open Sans', sans-serif;
+  text-shadow: 0;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.both {
+  clear: both;
+}
+.t_right {
+  text-align: right;
+}
+.dmid {
+  margin: 0 auto;
+}
+.next_view {
+  border: 1px solid #cccccc;
+  padding: 9px;
+}
+.redt {
+  color: #e53939;
+}
+.blackt {
+  color: #000;
+}
+.grayt {
+  color: #414141;
+}
+.bluet {
+  color: #2d86b3;
+}
+.redb {
+  background: #e53939;
+}
+.blackb {
+  background: #000;
+}
+.grayb {
+  background: #414141;
+}
+.blueb {
+  background: #2d86b3;
+}
+.bg_res {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.bradius {
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border-radius: 1px;
+}
+/* nav */
+.navbar {
+  background: #fff;
+  vertical-align: middle;
+  border-bottom: 0px solid #000;
+  line-height: 80px;
+}
+.logo {
+  margin-top: 10px;
+}
+.navbar .glyphicon-earphone {
+  margin-right: 10px;
+}
+.button_red {
+  border: 1px solid #e53939;
+  font-weight: 800;
+  color: #e53939;
+  background: #fff;
+  font-size: 12px;
+  height: 50px;
+  border-radius: 2px;
+  margin-top: 9px;
+}
+sup {
+  font-size: 9px;
+  margin-top: 5px;
+}
+footer {
+  height: 65px;
+  background-color: #252525;
+  line-height: 65px;
+  color: #999999;
+  font-size: 12px;
+  margin-bottom: -10px;
+}
+footer p {
+  font-size: 12px !important;
+  height: 65px;
+  margin: 0 0 0 100px;
+}
+footer a {
+  margin-right: 40px;
+  color: #999999;
+}
+footer .menu {
+  margin-right: 100px;
+}
+footer a:hover {
+  margin-right: 40px;
+  color: #fff;
+  text-decoration: none;
+}
+/* top text */
+.congrats-top {
+  background: url('../images/background-congratulations.jpg') no-repeat;
+  background-size: 100% 100%;
+  margin-top: 90px;
+  text-align: center;
+  color: #212121;
+  margin-bottom: 0;
+  height: 1000px;
+}
+.jumbotron h5 {
+  font-weight: 400;
+  font-size: 20px;
+}
+.jumbotron h2 {
+  font-family: 'ProximaNova-Light', sans-serif;
+  font-size: 52px;
+}
+/* TICKET */
+.ticket {
+  width: 570px;
+  height: 600px;
+  margin: 0 auto;
+  margin-top: 50px;
+  background: #fff;
+  -webkit-box-shadow: 5px 5px 30px 0px rgba(50, 50, 50, 0.57);
+  -moz-box-shadow: 5px 5px 30px 0px rgba(50, 50, 50, 0.57);
+  box-shadow: 5px 5px 30px 0px rgba(50, 50, 50, 0.57);
+}
+.title {
+  padding-top: 30px;
+  font-weight: 800;
+  font-size: 12px;
+}
+.ticket h3 {
+  font-family: 'ProximaNova-Light', sans-serif;
+  font-size: 26px;
+  padding: 10px 50px 10px 50px;
+  line-height: 40px;
+}
+.seperator {
+  margin: 0 auto;
+  background: #2d86b3;
+  height: 2px;
+  width: 40px;
+}
+.featuring {
+  margin: 30px 0 0 0;
+  color: #666666;
+  font-size: 14px;
+  font-style: italic;
+}
+.ticket h4 {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 800;
+}
+.helpervid {
+  margin-left: -15px;
+}
+.helpernovid {
+  padding-top: 40px;
+}
+.ticket .date {
+  width: 570px;
+  height: 120px;
+  background: url('../images/background-ticket.jpg');
+  margin-top: 30px;
+}
+.ticket .shape {
+  width: 570px;
+  height: 120px;
+  background: url('../images/ticket-shape.png');
+  padding: 35px 50px;
+  color: #fff;
+}
+.calendar_icon {
+  margin-right: 30px;
+}
+.ticket .datetime {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+}
+.maintime {
+  margin-left: 10px;
+  margin-top: -10px;
+  font-size: 13px;
+}
+.ticket_description {
+  margin-top: 20px;
+  font-size: 13px;
+  line-height: 20px;
+}
+.addto {
+  width: 570px;
+  height: 100px;
+  line-height: 70px;
+}
+.addto a {
+  margin-top: 26px;
+  float: left;
+  width: 190px;
+  height: 100px;
+  border: 1px solid #e5e5e5;
+  border-left: 0;
+  color: #666666;
+  margin-bottom: 30px;
+  bottom: 0;
+}
+.addto p {
+  font-size: 13px;
+  color: #666666;
+  text-decoration: none;
+  line-height: 30px;
+  margin-top: -10px;
+}
+.addto a:hover {
+  background: #f2f2f2;
+  text-decoration: none;
+  color: #000;
+}
+.informs {
+  margin: 0px auto;
+  text-align: center;
+  background: white;
+  padding: 60px;
+}
+.informs h2 {
+  font-family: 'ProximaNova-Light', sans-serif;
+  margin: 0 200px;
+  line-height: 42px;
+  font-size: 42px;
+  margin-top: 30px;
+}
+.informs h3 {
+  margin-top: 70px;
+  font-size: 14px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.list {
+  border: 1px solid #e6e6e6;
+  border-top: 0;
+  text-align: left;
+  padding: 30px 40px 30px 30px;
+  font-size: 14px;
+}
+.flist {
+  margin-top: 40px;
+  border-top: 1px solid #e6e6e6;
+}
+.list img {
+  margin-right: 22px;
+}
+.learnmore {
+  line-height: 28px;
+}
+.jumbotron .underwid {
+  margin-top: 110px;
+}
+.jumbotron .wideo {
+  margin-top: 50px;
+  background: url('../images/macbook.png') no-repeat;
+  width: 620px;
+  height: 330px;
+  margin: 0 auto;
+}
+.jumbotron .screen {
+  position: absolute;
+  margin-top: 21px;
+  margin-left: 73px;
+  background: #000;
+  width: 470px;
+  height: 265px;
+}
+.video h5 {
+  margin-top: 25px;
+  font-size: 14px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+section#footer {
+  clear: both;
+}

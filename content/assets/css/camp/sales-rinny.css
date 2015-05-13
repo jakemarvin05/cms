@@ -1,0 +1,181 @@
+h1 {
+  font-size: 42px;
+}
+h1 .smaller {
+  font-size: 32px;
+}
+h1 .smaller-2x {
+  font-size: 18px;
+}
+#banner-sales h1 {
+  line-height: 1.2;
+}
+#banner-sales h1 span {
+  display: block;
+}
+.video-laptop {
+  position: relative;
+  overflow: hidden;
+  margin: 4em 0 0;
+  max-width: 100%;
+}
+section#section1 img {
+  margin: 0 auto;
+}
+section#section2 {
+  padding: 4em 0 8em;
+  background: url(../../images/camp/bg100.jpg) bottom center no-repeat;
+  background-size: 100%;
+}
+section#section2 h2 {
+  margin-top: 32px;
+  margin-bottom: 20px;
+}
+section#section2 p {
+  color: #666;
+  margin-top: 28px;
+}
+ul.checklist {
+  min-height: 0;
+}
+section#section3 p {
+  color: #666;
+  margin-top: 2em;
+}
+section#section3 p .black {
+  color: #222;
+}
+section.alt-blocks {
+  position: relative;
+}
+section.alt-blocks .bg-gradient {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+section.alt-blocks:nth-child(even) .bg-gradient {
+  background: #ffffff;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 35%, #ffffff 45%, #ffffff 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255, 255, 255, 0.8)), color-stop(35%, rgba(255, 255, 255, 0.8)), color-stop(45%, #ffffff), color-stop(100%, #ffffff));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 35%, #ffffff 45%, #ffffff 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 35%, #ffffff 45%, #ffffff 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(left, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 35%, #ffffff 45%, #ffffff 100%);
+  /* IE10+ */
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 35%, #ffffff 45%, #ffffff 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1);
+  /* IE6-9 */
+}
+section.alt-blocks:nth-child(odd) .bg-gradient {
+  background: #f7f7f7;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #f7f7f7 0%, #f7f7f7 55%, rgba(247, 247, 247, 0.8) 65%, rgba(247, 247, 247, 0.8) 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #f7f7f7), color-stop(55%, #f7f7f7), color-stop(65%, rgba(247, 247, 247, 0.8)), color-stop(100%, rgba(247, 247, 247, 0.8)));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, #f7f7f7 0%, #f7f7f7 55%, rgba(247, 247, 247, 0.8) 65%, rgba(247, 247, 247, 0.8) 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left, #f7f7f7 0%, #f7f7f7 55%, rgba(247, 247, 247, 0.8) 65%, rgba(247, 247, 247, 0.8) 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(left, #f7f7f7 0%, #f7f7f7 55%, rgba(247, 247, 247, 0.8) 65%, rgba(247, 247, 247, 0.8) 100%);
+  /* IE10+ */
+  background: linear-gradient(to right, #f7f7f7 0%, #f7f7f7 55%, rgba(247, 247, 247, 0.8) 65%, rgba(247, 247, 247, 0.8) 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f7f7f7', endColorstr='#f7f7f7', GradientType=1);
+  /* IE6-9 */
+}
+section#altblock1 {
+  background-image: url("../../images/camp/bg101.jpg");
+}
+section#altblock2 {
+  background-image: url("../../images/camp/bg102.jpg");
+}
+section#altblock3 {
+  background-image: url("../../images/camp/bg103.jpg");
+}
+section#altblock4 {
+  background-image: url("../../images/camp/bg104.jpg");
+}
+section#altblock5 {
+  background-image: url("../../images/camp/bg105.jpg");
+}
+section#altblock6 {
+  background-image: url("../../images/camp/bg106.jpg");
+}
+section#altblock7 {
+  background-image: url("../../images/camp/bg107.jpg");
+}
+section#altblock8 {
+  background-image: url("../../images/camp/bg108.jpg");
+}
+section#section5 {
+  background: url("../../images/camp/bg109.jpg") top center no-repeat fixed;
+  background-size: cover;
+}
+section#section11 {
+  background: url("../../images/camp/rinny/bg-red.jpg") no-repeat bottom center;
+  background-size: cover;
+}
+.testimonial {
+  margin: 0 0 4em;
+}
+.testimonial a.btn-xparent-primary-rev:link {
+  background: transparent;
+  color: #e53939;
+  max-width: 200px;
+  margin-top: 22px;
+}
+.testimonial a.btn-xparent-primary-rev:link::before {
+  content: url("../../images/sales/right-icon.png");
+}
+.testimonial a.btn-xparent-primary-rev:hover::before {
+  content: url("../../images/sales/right-icon-white.png");
+}
+.testimonial a.btn-xparent-primary-rev:hover {
+  background: #e53939;
+  color: #fff;
+}
+a.btn-get-started {
+  color: #222;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-family: 'Open Sans';
+  font-size: 13px;
+  text-decoration: none;
+  display: block;
+  float: left;
+  margin-top: 20px;
+}
+a.btn-get-started .circle {
+  padding: 12px;
+  position: relative;
+  border-radius: 12px;
+  border: 1px solid #e85050;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  top: 8px;
+  left: 6px;
+}
+a.btn-get-started .circle:after {
+  content: url("../../images/sales/right-icon.png");
+  position: absolute;
+  left: 10px;
+  top: 4px;
+}
+div#head-call-to-action {
+  width: auto;
+  padding: 0;
+}
+@media screen and (max-width: 768px) {
+  a.btn-get-started {
+    float: none;
+  }
+}

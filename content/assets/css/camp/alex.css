@@ -1,0 +1,101 @@
+h3#pr-2 {
+  padding: 0px;
+  margin: 0px;
+  line-height: 1.5em;
+  font-weight: bold;
+}
+p#chris {
+  white-space: nowrap;
+}
+h2.unl {
+  max-width: 592px;
+  width: 500px;
+}
+section#section5 h2 {
+  /* border-bottom: solid 1px #2d86b3; */
+  max-width: 500px;
+  margin: 35px auto;
+}
+.learnmore-holder {
+  max-width: 170px;
+}
+section#altblock1 {
+  background-image: url("../../images/camp/sansego1-bg.png");
+  background-size: contain;
+}
+section#altblock2 {
+  background-image: url("../../images/camp/sansego2-bg.png");
+  background-size: contain;
+}
+section#altblock3 {
+  background-image: url("../../images/camp/sansego3-bg.png");
+  background-size: contain;
+}
+section#altblock4 {
+  background-image: url("../../images/camp/sansego4-bg.png");
+  background-size: contain;
+}
+section#altblock5 {
+  background-image: url("../../images/camp/sansego5-bg.png");
+  background-size: contain;
+}
+section#altblock6 {
+  background-image: url("../../images/camp/sansego6-bg.png");
+  background-size: contain;
+}
+section#altblock7 {
+  background-image: url("../../images/camp/sansego7-bg.png");
+  background-size: contain;
+}
+section#altblock8 {
+  background-image: url("../../images/camp/sansego8-bg.png");
+  background-size: contain;
+}
+section#section2 {
+  background: url("../../images/camp/craig-bg.png") no-repeat bottom center;
+  background-size: cover;
+  min-height: 900px;
+}
+section#section5 {
+  color: #fff;
+  background: url("../../images/camp/trc-bg.png") no-repeat top center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+h4#form-head {
+  text-align: center;
+  font-weight: 600;
+}
+p.form-foot {
+  text-align: center;
+  font-size: 11px;
+}
+section#section7b {
+  color: #fff;
+  background: url("../../images/camp/hawaii-bg.png") no-repeat top center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+section#section51 h2 {
+  /* border-bottom: solid 1px #2d86b3; */
+  max-width: 500px;
+  margin: 35px auto;
+}
+p#hawaii-sec {
+  border-bottom: solid -1px;
+}
+section#altblock9 {
+  background-image: url("../../images/camp/hawaii1-bg.png");
+}
+section#altblock10 {
+  background-image: url("../../images/camp/hawaii2-bg.png");
+}
+section#altblock11 {
+  background-image: url("../../images/camp/hawaii3-bg.png");
+}
+section#altblock12 {
+  background-image: url("../../images/camp/hawaii4-bg.png");
+}
+section#section12 h1 {
+  font-size: 2.6em;
+}

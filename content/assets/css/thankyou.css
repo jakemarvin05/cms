@@ -1,0 +1,223 @@
+/* Main */
+
+body {
+	font-family: 'Open Sans', sans-serif;
+    text-shadow: 0;
+}
+
+.left {
+	float:left;
+}
+
+.right {
+	float:right;
+}
+
+.both {
+	clear:both;
+}
+
+.t_right {
+	text-align: right;
+}
+
+.dmid {
+	margin:0 auto;
+}
+
+.next_view {
+	border:1px solid #cccccc;
+	padding:9px;
+}
+
+.redt {
+	color:#e53939;
+}
+
+.blackt {
+	color: #000;
+}
+
+.grayt {
+	color: #414141;
+}
+
+.bluet {
+	color: #2d86b3;
+}
+
+.redb {
+	background:#e53939;
+}
+
+.blackb {
+	background: #000;
+}
+
+.grayb {
+	background: #414141;
+}
+
+.blueb {
+	background: #2d86b3;
+}
+
+.bg_res {
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.bradius {
+	-webkit-border-radius: 1px;
+	-moz-border-radius: 1px;
+	border-radius: 1px;
+}
+
+/* nav */
+
+.navbar {
+	background:#fff;
+	vertical-align: middle;
+	border-bottom:0px solid #000;
+	line-height: 80px;
+}
+
+.logo {
+	margin-top:10px;
+}
+
+.navbar .glyphicon-earphone {
+	margin-right: 10px;
+}
+
+
+/* top text */
+
+.wideo{
+	background:url('../images/background-wideo.jpg') no-repeat;
+    background-size: 100% 100%;
+	margin-top:90px;
+	text-align: center;
+	color:#212121;
+	margin-bottom:0;
+	height:1055px;
+}
+
+.nowideo{
+	background:url('../images/background-nowideo.jpg') no-repeat;
+    background-size: 100% 100%;
+	margin-top:90px;
+	text-align: center;
+	color:#212121;
+	margin-bottom:0;
+	height:900px;
+}
+
+.jumbotron h4 {
+	font-weight: 400;
+	font-size: 20px;
+}
+
+.jumbotron h2 {
+	font-size: 52px;
+	font-family:'ProximaNova-Ligh't, sans-serif;
+}
+
+.jumbotron h5 {
+	margin-top:30px;
+	font-weight: bolder;
+}
+
+.jumbotron form {
+	margin-top:80px;
+}
+
+.jumbotron .phone span {
+	background: #fff;
+	border-radius: 0 0 2px 2px;
+	width:1px !important;
+}
+
+.jumbotron .phone input {
+	border-left: 0px;
+	font-size: 12px;
+	height:50px;
+	-webkit-box-shadow: inset 0 0px 0px rgba(0,0,0,.075);
+	box-shadow: inset 0 0px 0px rgba(0,0,0,.075); 
+	border-radius:2px;
+}
+
+.jumbotron .submit {
+	border: 1px solid #e53939;
+	font-weight: 800;
+	color:#e53939; 
+	height:;
+	background: #fff;
+	font-size: 12px; 
+	height:50px;
+	border-radius:2px;
+	margin-top:41px;
+}
+
+.jumbotron p {
+	font-size: 12px;
+	margin-top:10px;
+}
+
+.jumbotron a .nothanks{
+	margin-top:70px;
+}
+
+.jumbotron .underwid{
+	margin-top: 50px;
+}
+
+.jumbotron .wideo {
+	margin-top:50px;
+	background:url('../images/macbook.png') no-repeat;
+	width:621px;
+	height:327px;
+	margin:0 auto;
+}
+
+.jumbotron .screen {
+	position:absolute;
+	margin-top: 22px;
+	margin-left: 75px;
+	background:#000;
+	width: 470px;
+	height: 265px;
+}
+
+/* FOOTER */ 
+
+footer {
+	height:65px;
+	background-color: #252525;
+	line-height: 65px;
+	color:#999999;
+	font-size: 12px;
+	margin-bottom: -10px;
+}
+
+footer p{
+	height:65px;
+	margin:0 0 0 100px;
+}
+
+footer a {
+	margin-right:40px;
+	color:#999999;
+}
+
+footer .menu {
+	margin-right:100px;
+}
+
+footer a:hover {
+	margin-right:40px;
+	color:#fff;
+	text-decoration: none
+}
