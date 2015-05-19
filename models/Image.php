@@ -5,5 +5,5 @@
  * Date: 06.05.15
  * Time: 14:02
  */
-class category extends Model {
+class Image extends Model {
 }

@@ -1,4 +1,4 @@
-{include file="../header.tpl" title='Groups'}
+{include file="../header.tpl" title='Groups' authorized=true}
 
 <section>
 	<div class="container">

@@ -1,1 +1,0 @@
-All the utils should go. Route files shouldn't have any functions inside.

@@ -13,6 +13,13 @@
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootswatch/3.3.4/united/bootstrap.min.css">
 	<link rel="stylesheet" href="{$smarty.const.BASE_URL}/assets/css/main.css">
 	
+	<script>
+		var Config = {
+			BASE_URL: '{$smarty.const.BASE_URL}',
+			PAGINATION_PAGES: 3
+		};
+	</script>
+	
 	<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 	<script src="{$smarty.const.BASE_URL}/assets/js/main.js"></script>
@@ -30,39 +37,55 @@
 	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 		<div class="container">
 			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				{if $authorized}
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
 					<span class="sr-only">Toggle navigation</span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
+				{/if}
 				<a class="navbar-brand" href="{$smarty.const.BASE_URL}/admin/">{$smarty.const.PROJECT_NAME}</a>
 			</div>
-			<div class="navbar-collapse collapse">
+			{if $authorized}
+			<div class="navbar-collapse collapse" id="navbar-collapse">
 				<ul class="nav navbar-nav navbar-right">
-					<li>
-						<a href="#">Groups</a>
+					<li class="{if $current == 'groups'}active{/if}">
+						<a href="{$smarty.const.BASE_URL}/admin/groups/list/">Groups</a>
 					</li>
-					<li>
-						<a href="#">Images</a>
+					<li class="{if $current == 'templates'}active{/if}">
+						<a href="{$smarty.const.BASE_URL}/admin/templates/list/">Templates</a>
+					</li>
+					<li class="{if $current == 'images'}active{/if}">
+						<a href="{$smarty.const.BASE_URL}/admin/images/list/">Images</a>
 					</li>
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Associations <span class="caret"></span></a>
 						<ul class="dropdown-menu" role="menu">
-							<li><a href="#">Categories</a></li>
-							<li><a href="#">Tags</a></li>
+							<li class="{if $current == 'categories'}active{/if}">
+								<a href="{$smarty.const.BASE_URL}/admin/categories/list/">Categories</a>
+							</li>
+							<li class="{if $current == 'tags'}active{/if}">
+								<a href="{$smarty.const.BASE_URL}/admin/tags/list/">Tags</a>
+							</li>
 						</ul>
 					</li>
-					<li>
-						<a href="#">Accounts</a>
+					<li class="{if $current == 'accounts'}active{/if}">
+						<a href="{$smarty.const.BASE_URL}/admin/accounts/list/">Accounts</a>
 					</li>
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Other <span class="caret"></span></a>
 						<ul class="dropdown-menu" role="menu">
-							<li><a href="#">Redirects</a></li>
-							<li><a href="#">Configuration</a></li>
+							<li class="{if $current == 'redirects'}active{/if}">
+								<a href="{$smarty.const.BASE_URL}/admin/redirects/list/">Redirects</a>
+							</li>
+							<li class="{if $current == 'configuration'}active{/if}">
+								<a href="{$smarty.const.BASE_URL}/admin/configuration/list/">Configuration</a>
+							</li>
 							<li class="divider"></li>
-							<li><a href="#">Logs</a></li>
+							<li class="{if $current == 'logs'}active{/if}">
+								<a href="{$smarty.const.BASE_URL}/admin/logs/list/">Logs</a>
+							</li>
 						</ul>
 					</li>
 					<li class="dropdown">
@@ -71,11 +94,29 @@
 							Username <span class="caret"></span>
 						</a>
 						<ul class="dropdown-menu" role="menu">
-							<li><a href="#">My account</a></li>
-							<li><a href="#">Logout</a></li>
+							<li class="{if $current == 'my-account'}active{/if}">
+								<a href="{$smarty.const.BASE_URL}/admin/my-account/">My account</a>
+							</li>
+							<li>
+								<a href="#" id="logout">Logout</a>
+							</li>
 						</ul>
 					</li>
 				</ul>
 			</div>
+			{/if}
+		</div>
+		<div id="progress" class="progress progress-striped active">
+			<div class="progress-bar"></div>
 		</div>
 	</nav>
+
+	<section class="global-alert">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12" id="global-alert">
+				</div>
+			</div>
+		</div>
+	</section>
+	

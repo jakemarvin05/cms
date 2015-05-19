@@ -1,3 +1,161 @@
+/* Common */
+
 section {
 	margin-top: 100px;
 }
+
+section.global-alert + section {
+	margin-top: 0;
+}
+
+/* Forms */
+
+.form-group .error-message {
+	display: none;
+	color: #b94a48;
+	margin-top: 5px;
+}
+
+.form-group.has-error .error-message {
+	display: block;
+}
+
+.navbar-form .control-label {
+	color: #fff;
+	margin-right: 5px;
+}
+
+/* Progress */
+
+#progress {
+	display: none;
+	position: absolute;
+	bottom: -10px;
+	left: 0;
+	height: 10px;
+	width: 100%;
+	margin-bottom: 0;
+	
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+}
+
+#progress.visible {
+	display: block;
+}
+
+#progress .progress-bar {
+	width: 100%;
+	background-size: 20px 20px;
+}
+
+/* Navbar form */
+
+.navbar-form.navbar-right {
+	margin-right: -30px;
+}
+
+.navbar-form.navbar-left {
+	margin-left: -35px;
+}
+
+.navbar-form .form-group {
+	margin-left: 5px;
+}
+
+.navbar-form .form-group input,
+.navbar-form .form-group select {
+	border: 0 none;
+}
+
+.navbar-form .form-group input:hover,
+.navbar-form .form-group input:active,
+.navbar-form .form-group input:focus,
+.navbar-form .form-group select:hover,
+.navbar-form .form-group select:active,
+.navbar-form .form-group select:focus {
+	outline: none;
+	
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
+/* Tables */
+
+.table-footer .pagination {
+	margin: 0 0 15px 0;
+}
+
+.table-footer .page label {
+	display: inline-block;
+	margin-right: 30px;
+}
+
+.table-footer .page select {
+	display: inline-block;
+	width: auto;
+}
+
+table.table td.actions a {
+	margin-right: 5px;
+}
+
+table.table td.actions a:last-child {
+	margin-right: 0;
+}
+
+/* footer */
+footer p {
+	padding: 25px 0 10px 0;
+}
+
+/* Action box */
+
+.action-box {
+	background-color: #f5f5f5;
+	text-align: right;
+	padding: 10px;
+	border: 1px solid #e3e3e3;
+	margin-bottom: 20px;
+	
+	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset;
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset;
+	
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.action-box:after {
+	display: table;
+	clear: both;
+	content: '';
+}
+
+.action-box a {
+	margin-left: 5px;
+}
+
+/* 404 page */
+.pagenotfound {
+	/*background: #000;*/
+}
+
+.pagenotfound h1{
+	font-size:72px;
+	/*color: #fff;*/
+}
+
+.pagenotfound h1 span{
+	font-size:36px;
+	/*color: #f1f1f1;*/
+}
+
+.pagenotfound h2{
+	font-size:44px;
+	/*color: #CB1E1E;*/
+}
+

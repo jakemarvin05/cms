@@ -3,7 +3,7 @@
 define('PROJECT_NAME', 'Less Living Live CMS');
 define('BASE_URL', 'http://cms.triathlonresearch.dev');
 
-define('ROOT_DIR', $_SERVER ['DOCUMENT_ROOT']);
+define('ROOT_DIR', $_SERVER ['DOCUMENT_ROOT'].'/prism/cms');
 define('SLIM', str_replace("\\", "/", ROOT_DIR . '/lib/Slim/Slim.php'));
 
 define('INCLUDES_DIR', ROOT_DIR . '/includes/');

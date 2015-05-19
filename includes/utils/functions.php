@@ -18,15 +18,23 @@ function addLog($code, $account = false, $item = false) {
 function isAuthorised($login, $allowed) {
 	$user = Model::factory('Account')->where('login', $login)->find_one();
 	$roles = $user->roles()->find_many();
-	foreach ($roles as &$role) {
-		$role_tmp = $role->role()->find_one();
-		if ($role_tmp) {
-			$all_roles[] = $role_tmp->name;
+	if ($roles) {
+		foreach ($roles as &$role) {
+			$role_tmp = $role->role()->find_one();
+			if ($role_tmp) {
+				$all_roles[] = $role_tmp->name;
+			}
 		}
+		if (is_array($allowed)) {
+			foreach ($allowed as $allow)
+				if (in_array($allow,$all_roles))
+					return $user->id;
+		}
+		elseif (in_array($allowed, $all_roles))
+			return $user->id;
+		else return array('success' => false, 'errors' => ['message' => 'You are not authorised to access this page.']);
 	}
-	if (is_array($allowed)) { foreach ($allowed as $allow) if (in_array($allow,$all_roles)) return $user->id; }
-	elseif (in_array('admin',$all_roles)) return $user->id;
-	else return array('warrning' => true, 'message' => 'You are not authorised to access this page.');
+	else return array('success' => true, 'errors' => ['message' => 'User doesn\'t have any roles']);
 }
 
 /**
@@ -37,9 +45,7 @@ function isAuthorised($login, $allowed) {
  * @params
  * $object - [objects], Array of objects that will be converted to array of strings
  **/
-
-function dismount($object)
-{
+function dismount($object) {
 	$reflectionClass = new ReflectionClass(get_class($object));
 	$array = array();
 	foreach ($reflectionClass->getProperties() as $property) {
@@ -58,8 +64,7 @@ function dismount($object)
  * @params
  * $user, $password - [objects], Array of objects that will be converted to array of strings
  **/
-function generateSessionId($user, $password)
-{
+function generateSessionId($user, $password) {
 	$userAgent = $_SERVER["HTTP_USER_AGENT"];
 	return hash("sha512", "{$user}{$password}{$userAgent}");
 }
@@ -70,9 +75,13 @@ function generateSessionId($user, $password)
  * @description
  * A function that will generate a Salt in a hashing a random number
  **/
-function generateSalt()
-{
+function generateSalt() {
 	return hash("sha512", uniqid(mt_rand(1, mt_getrandmax()), true));
+}
+
+function generatePassword($pass, $salt) {
+	$pass_hash = hash("sha512", $pass);
+	return hash("sha512", $pass_hash.$salt);
 }
 
 /**
@@ -83,23 +92,30 @@ function generateSalt()
  * @params
  * $sessionID, $username - [objects], Array of objects that will be converted to array of strings
  **/
-function validateUserKey($sessionID, $username)
-{
-	$user = Model::factory('Account')->where('login', $username
-	)->find_one();
+function validateUserKey($sessionID, $username) {
+	$user = Model::factory('Account')->where('login', $username)->find_one();
 
 	if (empty($user)) {
 		return false;
 	} else {
-
+		$app = \Slim\Slim::getInstance();
 		if ($sessionID == generateSessionId($user->login, $user->password)) {
+			$app->setEncryptedCookie('user', $username, '15 minutes');
+			$app->setEncryptedCookie('sessionID', $sessionID, '15 minutes');
 			return true;
 		} else {
-			var_dump($sessionID);
-			var_dump(generateSessionId($user->login, $user->password));
+			$app->deleteCookie('user');
+			$app->deleteCookie('sessionID');
 			return false;
 		}
 	}
+}
+
+function isAuthenticated() {
+	$app = \Slim\Slim::getInstance();
+	$sessionID = $app->getEncryptedCookie('sessionID');
+	$username = $app->getEncryptedCookie('user');
+	return validateUserKey($sessionID, $username);
 }
 
 /**
@@ -110,28 +126,11 @@ function validateUserKey($sessionID, $username)
  * @params
  * $route - [objects], Array of objects that will be converted to array of strings
  **/
-function authenticate(\Slim\Route $route)
-{
+function authenticate(\Slim\Route $route) {
 	$app = \Slim\Slim::getInstance();
-	$sessionID = $app->getEncryptedCookie('sessionID');
-	$username = $app->getEncryptedCookie('user');
-	if (validateUserKey($sessionID, $username) === false) {
-		$app->response->redirect('/login/', 303);
+	if (!isAuthenticated()) {
+		$app->response->redirect('/admin/login/', 303);
 	}
-}
-
-/**
- * @functionName
- * generatePassword
- * @description
- * A function that will Automatically generate password from password and salt
- * @params
- * $password - String, the password 
- * $salt - String, the salt 
- **/
-function generatePassword($password, $salt) {
-return hash("sha512", $password.$salt);
-	
 }
 
 function generateRandomString($length = 10) {
